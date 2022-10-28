@@ -16,7 +16,7 @@ function App() {
       <center><img src={profile} alt="" id='profile_img'/></center>
       <p id='twitter'>@AlPHA_MHALE</p>
       <span className='dummy'>haryor</span>
-      { windowx >'500'?<img className='arrow' src={arrow} alt="" />:<img className='arrow' src={three}/>}
+      { windowx >'500'?<img className='arrow' src={arrow} alt="" />:<img className='arrow' alt='' src={three}/>}
      </header>
      <main>
       <a className='link' href="https://twitter.com/alphamhale/">Twitter Link</a>
