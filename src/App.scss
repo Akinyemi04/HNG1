@@ -1,0 +1,125 @@
+*{
+  padding: 0 0;
+  margin: 0 0;
+  box-sizing: border-box;
+}
+body{
+  overflow-x: hidden;
+}
+.App{
+  header{
+    width: 100vw;
+    padding-top: 5vh;
+    position: relative;
+    height: 15vh;
+    #profile_img{
+      width: 100px;
+      height: 100px;
+      margin: auto;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    #twitter{
+      text-align: center;
+      color: rgba(16, 24, 40, 1);
+      font-weight: 700;
+      font-size: 20px;
+      margin-top: 1.5vh;
+      line-height: 30px;
+      font: inter;
+    }
+    .dummy{
+      display: none;
+    }
+    .arrow{
+      position:absolute;
+      top: 4vh;
+      right: 20vw;
+      border: 1px solid grey;
+      padding: 10px;
+      // width: 25px;
+      // object-fit: contain;
+      // height: 25px;
+      border-radius: 50%;
+    }
+  }
+  main{
+    margin-top: 16vh;
+    padding: 0 6vw;
+    display: flex;
+    flex-direction: column;
+    a{
+      border-radius: 8px;
+      text-align:center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      min-height: 10vh;
+      margin-bottom: 1.1vh;
+      color: black;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 28px;
+      align-content: center;
+      width: inherit;
+      background-color:rgba(234, 236, 240, 1)
+    }
+    a:hover{
+      opacity: 0.6;
+    }
+    .link{
+      padding-top:3vh ;
+    }
+    aside{
+      align-items: center;
+      display: flex;
+      padding: 0 40vw;
+      img{
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+        margin-left: 1vw;
+
+      }
+    }
+  }
+  footer{
+    //margin-top: 4vh;
+    display: flex;
+    margin: 3.5vh 5vw;
+    padding-top: 2vh;
+    flex-direction:row ;
+    justify-content: space-between;
+    border-top: 1px solid rgb(194, 189, 189);
+    img{
+      min-width:7vw;
+      object-fit: contain;
+    }
+    span{
+
+    }
+  }
+}
+
+@media screen and(max-width:'500px') {
+  .App{
+    header{
+      .arrow{
+        width: 25px;
+        padding: 0;
+      object-fit: contain;
+      height: 25px;
+      }
+    }
+    footer{
+      flex-direction: column;
+      img{
+        object-fit: cover;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        width: 30vw;
+      }
+    }
+  }
+}
