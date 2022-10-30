@@ -5,6 +5,7 @@ import github from './images/github.png'
 import zuri from './images/zuri.png'
 import intern from './images/good.png'
 import three from './images/three.png'
+import camera from './images/Iconcamera.png'
 import './App.css';
 
 function App() {
@@ -13,9 +14,12 @@ function App() {
   return (
     <div className="App">
      <header>
-      <center><img src={profile} alt="" id='profile_img'/></center>
+      <center>
+        <img src={profile} alt="" id='profile_img'/>
+        <img className='cam' src={camera} alt=''/>
+      </center>
       <p id='twitter'>@AlPHA_MHALE</p>
-      {/* /*<span className='slack_name'>haryor</span> */}
+      {/* /*<span className='slack_name'>Gabriel012</span> */}
       { windowx >'500'?<img className='arrow' src={arrow} alt="" />:<img className='arrow' alt='' src={three}/>}
      </header>
      <main>
@@ -24,7 +28,7 @@ function App() {
       <a title='Get the best books on design and coding with illustration and code snippet for better comprehension' className='link' id='books' href="http://books.zuri.team">
         <span>Zuri Books</span>
       </a>
-      <a title='All you need to become a better programmer in just one book' className='link' id='book_python' href="https://books.zuri.team/python-for-beginners?ref_id=<haryor>">
+      <a title='All you need to become a better programmer in just one book' className='link' id='book_python' href="https://books.zuri.team/python-for-beginners?ref_id=<Gabriel012>">
         <span>Python Books </span>
       </a>
       <a  title='Let our team help you run background checks on your codes' className='link' id='pitch' href="https://background.zuri.team">

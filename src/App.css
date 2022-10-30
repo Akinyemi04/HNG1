@@ -22,6 +22,21 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.App header center {
+  position: relative;
+}
+.App header center .cam {
+  position: absolute;
+  left: 49vw;
+  top: 9vh;
+  display: none;
+}
+.App header #profile_img:hover {
+  opacity: 0.5;
+}
+.App header #profile_img:hover + .cam {
+  display: block;
+}
 .App header #twitter {
   text-align: center;
   color: rgb(16, 24, 40);
@@ -38,7 +53,7 @@ body {
   position: absolute;
   top: 4vh;
   right: 20vw;
-  border: 1px solid grey;
+  border: 1px dotted grey;
   padding: 10px;
   border-radius: 50%;
 }
@@ -113,5 +128,14 @@ body {
     margin-top: 2vh;
     margin-bottom: 2vh;
     width: 30vw;
+  }
+  .App center {
+    position: relative;
+  }
+  .App center .cam {
+    position: absolute;
+    left: 47vw;
+    top: 8vh;
+    display: none;
   }
 }/*# sourceMappingURL=App.css.map */
