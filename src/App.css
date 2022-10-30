@@ -119,6 +119,15 @@ body {
        object-fit: contain;
     height: 25px;
   }
+  .App header center {
+    position: relative;
+  }
+  .App header center .cam {
+    position: absolute;
+    left: 46.6vw;
+    top: 8vh;
+    display: none;
+  }
   .App footer {
     flex-direction: column;
   }
@@ -128,14 +137,5 @@ body {
     margin-top: 2vh;
     margin-bottom: 2vh;
     width: 30vw;
-  }
-  .App center {
-    position: relative;
-  }
-  .App center .cam {
-    position: absolute;
-    left: 47vw;
-    top: 8vh;
-    display: none;
   }
 }/*# sourceMappingURL=App.css.map */

@@ -117,7 +117,7 @@ body{
   }
 }
 
-@media screen and(max-width:'500px') {
+@media screen and (max-width:'500px') {
   .App{
     header{
       .arrow{
@@ -125,6 +125,15 @@ body{
         padding: 0;
       object-fit: contain;
       height: 25px;
+      }
+      center{
+        position: relative;
+        .cam{
+          position: absolute;
+          left: 46.6vw;
+          top: 8vh;
+          display: none;
+        }
       }
     }
     footer{
@@ -136,14 +145,6 @@ body{
         width: 30vw;
       }
     }
-    center{
-      position: relative;
-      .cam{
-        position: absolute;
-        left: 47vw;
-        top: 8vh;
-        display: none;
-      }
-    }
+    
   }
 }
